@@ -58,11 +58,12 @@ export default function Education() {
               </p>
               <p className="text-sm text-text-secondary leading-relaxed">
                 <span className="text-text-primary font-medium">
-                  Smart Beehive Monitoring System Using Millimeter-Wave Sensors
-                  for Real-Time Colony Health Analysis
+                  The Design and Development of an IoT-Based Beehive Monitoring System
+                  for Philippine Stingless Bee Colonies (Tetragonula Biroi)
                 </span>{" "}
-                — An IoT solution combining embedded sensors, real-time data
-                transmission, and mobile-based remote monitoring.
+                — An IoT solution integrating temperature, humidity, and weight sensors
+                 with automated feedback mechanisms for real-time 
+                 stingless bee colony health management.
               </p>
             </div>
           </div>

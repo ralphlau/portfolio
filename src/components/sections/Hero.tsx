@@ -146,7 +146,7 @@ export default function Hero() {
           className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up"
           style={{ animationDelay: "350ms", opacity: 0, animationFillMode: "forwards" }}
         >
-          Building reliable systems and testing quality software —
+          Building reliable IoT systems and quality software —
           <br className="hidden md:block" /> from embedded hardware to automated test pipelines.
         </p>
 

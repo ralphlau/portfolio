@@ -73,28 +73,28 @@ export default function Projects() {
                 </span>
               </div>
               <h3 className="font-display text-xl md:text-2xl font-700 text-text-primary leading-tight max-w-2xl">
-                Smart Beehive Monitoring System Using Millimeter-Wave Sensors
-                for Real-Time Colony Health Analysis
+                The Design and Development of an IoT-Based Beehive Monitoring System 
+                for Philippine Stingless Bee Colonies (Tetragonula Biroi)
               </h3>
             </div>
           </div>
 
           <p className="text-text-secondary leading-relaxed mb-6 max-w-3xl">
-            A smart monitoring system that uses millimeter-wave sensors to
-            analyze beehive activity and colony health in real time. The system
-            detects movement, anomalies, and environmental patterns, and
-            transmits data to a mobile application for remote monitoring and
-            control — offering a non-invasive alternative to traditional hive
-            inspection methods.
+            An IoT-based beehive monitoring system developed for 
+            Tetragonula biroi (stingless bee) colonies in the Philippines. 
+            The system integrates temperature, humidity, and weight sensors 
+            with automated feedback mechanisms and real-time Discord alerts 
+            — shifting beekeeping from reactive observation to proactive, 
+            data-driven colony management.
           </p>
 
           {/* Features */}
           <div className="grid sm:grid-cols-2 gap-3 mb-7">
             {[
-              "Real-time hive activity monitoring",
-              "Non-invasive millimeter-wave sensing",
-              "Remote alerts and control via mobile app",
-              "Anomaly detection and data analytics",
+              "Real-time monitoring of temperature, humidity, and hive weight",
+              "Automated actuators (fan, mist atomizer, heater) responding to threshold deviations",
+              "Alerts for abnormal hive conditions",
+              "Web-based remote access via ESP32 Wi-Fi connectivity",
             ].map((feat) => (
               <div key={feat} className="flex items-center gap-2 text-sm">
                 <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
@@ -106,10 +106,9 @@ export default function Projects() {
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2 mb-7">
             {[
-              "ESP32",
-              "Millimeter-Wave Sensors",
+              "ESP32 Microcontroller",
               "IoT Communication",
-              "Mobile App Integration",
+              "Web Dashboard",
               "Real-Time Analytics",
             ].map((tech) => (
               <Badge key={tech} label={tech} variant="accent" />
