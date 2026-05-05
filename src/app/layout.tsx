@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Ralph Laurenz Timbol | Computer Engineering & QA Engineer",
   description:
-    "Computer Engineering graduate with experience in embedded systems, software testing, and IoT development. Skilled in Python, JavaScript, and embedded systems.",
+    "Computer Engineering graduate with experience in IoT systems, and software quality assurance. Skilled in Python, C++, JavaScript, and embedded systems.",
   keywords: [
     "Ralph Timbol",
     "QA Engineer",
