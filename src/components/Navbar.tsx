@@ -35,7 +35,7 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a
-          href="#"
+          href="ralph-timbol-cv.pdf"
           className="font-display font-700 text-lg tracking-tight text-text-primary hover:text-accent transition-colors"
         >
           <span className="text-accent">R</span>LT
