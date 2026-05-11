@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { ArrowDown, Github, Linkedin, Mail, User } from "lucide-react";
+import { Github, Linkedin, Mail, User } from "lucide-react";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -108,7 +108,7 @@ export default function Hero() {
           <div className="relative inline-block">
             <div className="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-accent/40 bg-surface/60 flex flex-col items-center justify-center gap-1 overflow-hidden animate-glow-pulse">
               <User size={36} className="text-accent/50" />
-              <span className="font-mono text-[9px] text-text-muted">your photo</span>
+              <span className="font-mono text-[9px] text-text-muted">ralph-photo.jpg</span>
             </div>
             {/* Decorative ring */}
             <div className="absolute inset-0 rounded-full border border-accent/15 scale-110" />
@@ -187,11 +187,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
-        <span className="font-mono text-xs text-text-muted">scroll</span>
-        <ArrowDown size={14} className="text-text-muted" />
-      </div>
     </section>
   );
 }
