@@ -35,7 +35,7 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a
-          href="ralph-timbol-cv.pdf"
+          href="#"
           className="font-display font-700 text-lg tracking-tight text-text-primary hover:text-accent transition-colors"
         >
           <span className="text-accent">R</span>LT
@@ -59,7 +59,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="#"
+            href="/ralph-timbol-cv.pdf" download
             className="flex items-center gap-2 text-xs font-mono text-text-muted hover:text-accent border border-border hover:border-accent/50 px-3 py-1.5 rounded transition-all"
           >
             <Download size={12} />

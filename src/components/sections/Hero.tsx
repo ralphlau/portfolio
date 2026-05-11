@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { Github, Linkedin, Mail, User } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -106,10 +106,11 @@ export default function Hero() {
           style={{ opacity: 0, animationFillMode: "forwards" }}
         >
           <div className="relative inline-block">
-            <div className="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-accent/40 bg-surface/60 flex flex-col items-center justify-center gap-1 overflow-hidden animate-glow-pulse">
-              <User size={36} className="text-accent/50" />
-              <span className="font-mono text-[9px] text-text-muted">ralph-photo.jpg</span>
-            </div>
+           <img
+              src="/ralph-photo.jpg"
+            alt="Ralph Laurenz Timbol"
+             className="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-accent/40 object-cover animate-glow-pulse"
+              />
             {/* Decorative ring */}
             <div className="absolute inset-0 rounded-full border border-accent/15 scale-110" />
           </div>
