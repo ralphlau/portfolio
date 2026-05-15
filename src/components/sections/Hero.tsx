@@ -109,7 +109,7 @@ export default function Hero() {
            <img
               src="/ralph-photo.jpg"
             alt="Ralph Laurenz Timbol"
-             className="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-accent/40 object-cover animate-glow-pulse"
+             className="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-accent/40 object-cover object-top animate-glow-pulse"
               />
             {/* Decorative ring */}
             <div className="absolute inset-0 rounded-full border border-accent/15 scale-110" />
