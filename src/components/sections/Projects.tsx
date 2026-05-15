@@ -10,12 +10,6 @@ const filters = ["All", "Embedded", "QA/Testing", "Web", "IoT"];
 
 const placeholderProjects = [
   {
-    title: "Playwright Test Suite",
-    desc: "Automated end-to-end test suite built with Playwright covering critical user flows. Structured with the Page Object Model pattern.",
-    tags: ["Playwright", "TypeScript", "Testing"],
-    category: "QA/Testing",
-  },
-  {
     title: "IoT Environment Monitor",
     desc: "ESP32-based sensor node that monitors temperature, humidity, and air quality, reporting to a cloud dashboard.",
     tags: ["ESP32", "MQTT", "IoT"],
@@ -39,6 +33,12 @@ const placeholderProjects = [
     tags: ["Arduino", "C++", "Embedded"],
     category: "Embedded",
   },
+  {
+    title: "Project Coming Soon",
+    desc: "Currently working on new projects. Check back soon for updates.",
+    tags: ["TBA"],
+    category: "Web",
+  },
 ];
 
 export default function Projects() {
@@ -57,12 +57,10 @@ export default function Projects() {
         subtitle="From embedded hardware systems to automated testing frameworks."
       />
 
-      {/* ⭐ Featured Project */}
-      <div className="relative mb-16 rounded-2xl overflow-hidden gradient-border bg-card-glow bg-bg-secondary animate-glow-pulse">
-        {/* Background accent */}
+      {/* Featured Project — Thesis */}
+      <div className="relative mb-8 rounded-2xl overflow-hidden gradient-border bg-card-glow bg-bg-secondary animate-glow-pulse">
         <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
-
         <div className="relative p-8 md:p-10">
           <div className="flex items-start justify-between flex-wrap gap-4 mb-6">
             <div>
@@ -73,22 +71,18 @@ export default function Projects() {
                 </span>
               </div>
               <h3 className="font-display text-xl md:text-2xl font-700 text-text-primary leading-tight max-w-2xl">
-                The Design and Development of an IoT-Based Beehive Monitoring System 
+                The Design and Development of an IoT-Based Beehive Monitoring System
                 for Philippine Stingless Bee Colonies (Tetragonula Biroi)
               </h3>
             </div>
           </div>
-
           <p className="text-text-secondary leading-relaxed mb-6 max-w-3xl">
-            An IoT-based beehive monitoring system developed for 
-            Tetragonula biroi (stingless bee) colonies in the Philippines. 
-            The system integrates temperature, humidity, and weight sensors 
-            with automated feedback mechanisms and real-time Discord alerts 
-            — shifting beekeeping from reactive observation to proactive, 
-            data-driven colony management.
+            An IoT-based beehive monitoring system developed for Tetragonula biroi
+            (stingless bee) colonies in the Philippines. The system integrates
+            temperature, humidity, and weight sensors with automated feedback
+            mechanisms and real-time Discord alerts — shifting beekeeping from
+            reactive observation to proactive, data-driven colony management.
           </p>
-
-          {/* Features */}
           <div className="grid sm:grid-cols-2 gap-3 mb-7">
             {[
               "Real-time monitoring of temperature, humidity, and hive weight",
@@ -102,20 +96,11 @@ export default function Projects() {
               </div>
             ))}
           </div>
-
-          {/* Tech Stack */}
           <div className="flex flex-wrap gap-2 mb-7">
-            {[
-              "ESP32 Microcontroller",
-              "IoT Communication",
-              "Web Dashboard",
-              "Real-Time Analytics",
-            ].map((tech) => (
+            {["ESP32 Microcontroller", "IoT Communication", "Web Dashboard", "Real-Time Analytics"].map((tech) => (
               <Badge key={tech} label={tech} variant="accent" />
             ))}
           </div>
-
-          {/* Buttons */}
           <div className="flex flex-wrap gap-3">
             <a
               href="#"
@@ -127,6 +112,58 @@ export default function Projects() {
             <a
               href="#"
               className="flex items-center gap-2 border border-border hover:border-accent/50 text-text-secondary hover:text-accent font-display font-500 text-sm px-5 py-2.5 rounded transition-all"
+            >
+              <Github size={14} />
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* HireTrack — In Progress */}
+      <div className="relative mb-16 rounded-2xl overflow-hidden gradient-border bg-bg-secondary">
+        <div className="absolute top-0 right-0 w-48 h-48 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="relative p-8 md:p-10">
+          <div className="flex items-start justify-between flex-wrap gap-4 mb-6">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                <span className="font-mono text-xs text-accent tracking-widest uppercase">
+                  In Progress · Apr 2026 – Present
+                </span>
+              </div>
+              <h3 className="font-display text-xl md:text-2xl font-700 text-text-primary leading-tight max-w-2xl">
+                HireTrack — Job Application Pipeline Manager
+              </h3>
+            </div>
+          </div>
+          <p className="text-text-secondary leading-relaxed mb-6 max-w-3xl">
+            A full-stack job application tracking system featuring a drag-and-drop
+            Kanban pipeline board, interview scheduling, recruiter contact management,
+            and an application statistics dashboard with JWT-based authentication.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3 mb-7">
+            {[
+              "Drag-and-drop Kanban pipeline board",
+              "Interview scheduling and notes",
+              "Recruiter contact management",
+              "Application statistics dashboard",
+            ].map((feat) => (
+              <div key={feat} className="flex items-center gap-2 text-sm">
+                <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                <span className="text-text-secondary">{feat}</span>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-2 mb-7">
+            {["Next.js", "PostgreSQL", "TailwindCSS", "JWT Auth", "Playwright"].map((tech) => (
+              <Badge key={tech} label={tech} variant="accent" />
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="#"
+              className="flex items-center gap-2 border border-accent/30 hover:border-accent text-accent font-display font-500 text-sm px-5 py-2.5 rounded transition-all"
             >
               <Github size={14} />
               GitHub
@@ -186,8 +223,7 @@ export default function Projects() {
       </div>
 
       <p className="text-center text-text-muted font-mono text-xs mt-10">
-        More projects will be added as I continue building and documenting my
-        work.
+        More projects will be added as I continue building and documenting my work.
       </p>
     </Section>
   );

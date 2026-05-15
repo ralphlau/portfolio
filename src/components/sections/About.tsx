@@ -29,36 +29,28 @@ export default function About() {
           <SectionHeading label="01. About" title="Who I Am" />
           <div className="space-y-4 text-text-secondary leading-relaxed">
             <p>
-              I&apos;m a Computer Engineering graduate from{" "}
+             I&apos;m a Computer Engineering graduate from{" "}
               <span className="text-text-primary font-medium">
-                Systems Plus College Foundation
-              </span>{" "}
+              Systems Plus College Foundation
+            </span>{" "}
               in the Philippines, recognized with Cum Laude honors and Dean&apos;s
               List standing throughout my academic career.
             </p>
             <p>
-              During my time at{" "}
-              <span className="text-accent font-medium">
-                Cloudstaff Philippines Inc.
-              </span>
-              , I gained
-              hands-on experience in both manual and automated testing using
-              Playwright. I collaborated closely with development teams to ensure
-              software quality at every stage of the pipeline.
+              I have experience in manual and automated software testing using{" "}
+              <span className="text-accent font-medium">Playwright</span>, with a
+              solid foundation in Python, JavaScript, and embedded systems. I am
+              detail-oriented and capable of contributing to reliable, high-quality
+              software.
             </p>
             <p>
-              My engineering thesis involved designing a{" "}
-              <span className="text-text-primary font-medium">
-                Smart Beehive Monitoring System
-              </span>{" "}
-              using millimeter-wave sensors — blending embedded systems, IoT
-              communication, and real-time data analytics into a practical
-              solution.
-            </p>
-            <p>
-              I thrive at the intersection of hardware and software, and I&apos;m
-              passionate about building systems that are not only functional but
-              reliable.
+              My engineering thesis involved designing an{" "}
+            <span className="text-text-primary font-medium">
+              IoT-Based Beehive Monitoring System
+            </span>{" "}
+              for Philippine stingless bee colonies — integrating ESP32, temperature,
+              humidity, and weight sensors with automated feedback mechanisms and
+              real-time remote monitoring.
             </p>
           </div>
 
