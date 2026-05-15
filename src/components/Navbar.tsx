@@ -59,7 +59,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/ralph-timbol-cv.pdf" download
+            href="#"
             className="flex items-center gap-2 text-xs font-mono text-text-muted hover:text-accent border border-border hover:border-accent/50 px-3 py-1.5 rounded transition-all"
           >
             <Download size={12} />
@@ -94,7 +94,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="#"
+                href="/ralph-laurenz-timbol-cv.pdf" download
                 className="flex items-center gap-2 text-xs font-mono text-accent mt-2"
               >
                 <Download size={12} />
