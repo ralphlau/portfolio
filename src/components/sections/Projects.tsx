@@ -120,8 +120,8 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* HireTrack — In Progress */}
-      <div className="relative mb-16 rounded-2xl overflow-hidden gradient-border bg-bg-secondary">
+      {/* KITA — In Development */}
+      <div className="relative mb-8 rounded-2xl overflow-hidden gradient-border bg-bg-secondary">
         <div className="absolute top-0 right-0 w-48 h-48 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
         <div className="relative p-8 md:p-10">
           <div className="flex items-start justify-between flex-wrap gap-4 mb-6">
@@ -129,18 +129,68 @@ export default function Projects() {
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
                 <span className="font-mono text-xs text-accent tracking-widest uppercase">
-                  In Progress · Apr 2026 – Present
+                  In Development · Aug 2026
                 </span>
               </div>
               <h3 className="font-display text-xl md:text-2xl font-700 text-text-primary leading-tight max-w-2xl">
-                HireTrack — Job Application Pipeline Manager
+                KITA — Multi-Tenant Bookkeeping SaaS
+              </h3>
+            </div>
+          </div>
+          <p className="text-text-secondary leading-relaxed mb-6 max-w-3xl">
+            A multi-tenant bookkeeping platform where each organization has fully
+            isolated users, ledger, and settings. Built around a three-tier role
+            system — Super Admin, Organization Admin, and Bookkeeper — with a
+            structured ledger supporting postable and reversible entries.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3 mb-7">
+            {[
+              "Three-tier role-based access with full per-tenant data isolation",
+              "Postable and reversible ledger entries with linked audit trail",
+              "Automated financial reports — income statement and balance sheet",
+              "AI-assisted receipt scanning with confidence scoring before posting",
+            ].map((feat) => (
+              <div key={feat} className="flex items-center gap-2 text-sm">
+                <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                <span className="text-text-secondary">{feat}</span>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-2 mb-7">
+            {["Next.js", "Prisma", "PostgreSQL", "NextAuth", "Playwright"].map((tech) => (
+              <Badge key={tech} label={tech} variant="accent" />
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <span className="flex items-center gap-2 text-text-muted font-display font-500 text-sm px-5 py-2.5 rounded border border-border/50">
+              <Lock size={14} />
+              Private Repository
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* TALA — Completed */}
+      <div className="relative mb-16 rounded-2xl overflow-hidden gradient-border bg-bg-secondary">
+        <div className="absolute top-0 right-0 w-48 h-48 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="relative p-8 md:p-10">
+          <div className="flex items-start justify-between flex-wrap gap-4 mb-6">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold" />
+                <span className="font-mono text-xs text-gold tracking-widest uppercase">
+                  Completed · Apr 2026
+                </span>
+              </div>
+              <h3 className="font-display text-xl md:text-2xl font-700 text-text-primary leading-tight max-w-2xl">
+                TALA — Job Application Pipeline Manager
               </h3>
             </div>
           </div>
           <p className="text-text-secondary leading-relaxed mb-6 max-w-3xl">
             A full-stack job application tracking system featuring a drag-and-drop
             Kanban pipeline board, interview scheduling, recruiter contact management,
-            and an application statistics dashboard with JWT-based authentication.
+            and an application statistics dashboard with NextAuth-based authentication.
           </p>
           <div className="grid sm:grid-cols-2 gap-3 mb-7">
             {[
@@ -156,18 +206,15 @@ export default function Projects() {
             ))}
           </div>
           <div className="flex flex-wrap gap-2 mb-7">
-            {["Next.js", "PostgreSQL", "TailwindCSS", "JWT Auth", "Playwright"].map((tech) => (
+            {["Next.js", "PostgreSQL", "TailwindCSS", "NextAuth", "Playwright"].map((tech) => (
               <Badge key={tech} label={tech} variant="accent" />
             ))}
           </div>
           <div className="flex flex-wrap gap-3">
-            <a
-              href="#"
-              className="flex items-center gap-2 border border-accent/30 hover:border-accent text-accent font-display font-500 text-sm px-5 py-2.5 rounded transition-all"
-            >
-              <Github size={14} />
-              GitHub
-            </a>
+            <span className="flex items-center gap-2 text-text-muted font-display font-500 text-sm px-5 py-2.5 rounded border border-border/50">
+              <Lock size={14} />
+              Private Repository
+            </span>
           </div>
         </div>
       </div>

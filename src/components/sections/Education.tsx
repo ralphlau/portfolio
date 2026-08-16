@@ -2,11 +2,7 @@ import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { GraduationCap, Award, Calendar } from "lucide-react";
 
-const honors = [
-  "Cum Laude Graduate",
-  "Dean's Lister",
-  "Academic Excellence Awardee",
-];
+const honors = ["GPA: 1.34"];
 
 export default function Education() {
   return (

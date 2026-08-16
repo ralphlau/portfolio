@@ -1,50 +1,57 @@
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Badge from "@/components/ui/Badge";
-import { Code2, FlaskConical, Cpu, Network, GitBranch } from "lucide-react";
+import { Code2, Globe, FlaskConical, Cpu, Network, PenTool } from "lucide-react";
 
 const skillCategories = [
   {
     icon: Code2,
-    label: "Programming",
+    label: "Programming & Scripting",
     color: "accent" as const,
     skills: ["Python", "JavaScript", "TypeScript", "Assembly", "C/C++"],
   },
   {
+    icon: Globe,
+    label: "Web Development",
+    color: "gold" as const,
+    skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PHP", "REST APIs"],
+  },
+  {
     icon: FlaskConical,
     label: "Testing & QA",
-    color: "gold" as const,
+    color: "accent" as const,
     skills: [
       "Manual Testing",
-      "Playwright",
+      "Playwright Automation",
       "Test Case Design",
-      "Regression Testing",
       "Bug Reporting",
+      "Agile/Scrum",
     ],
   },
   {
     icon: Cpu,
-    label: "Embedded Systems",
-    color: "accent" as const,
-    skills: ["Arduino", "ESP32", "Raspberry Pi", "IoT", "Sensor Integration"],
+    label: "Embedded Systems & IoT",
+    color: "gold" as const,
+    skills: ["Arduino", "ESP32", "Sensor & Actuator Integration", "IoT Communication"],
   },
   {
     icon: Network,
     label: "Networking",
-    color: "gold" as const,
+    color: "accent" as const,
     skills: [
       "Network Configuration",
       "Troubleshooting",
-      "TCP/IP",
       "VLANs",
-      "Wireless",
+      "Routing Protocols",
+      "Wireless LAN",
+      "Cisco IOS",
     ],
   },
   {
-    icon: GitBranch,
-    label: "Tools & Platforms",
-    color: "accent" as const,
-    skills: ["Git", "GitHub", "VS Code", "Linux", "Postman"],
+    icon: PenTool,
+    label: "CAD & Technical Drafting",
+    color: "gold" as const,
+    skills: ["AutoCAD 2D Drafting", "AutoCAD 3D Modeling"],
   },
 ];
 
@@ -54,7 +61,7 @@ export default function Skills() {
       <SectionHeading
         label="02. Skills"
         title="Technical Toolkit"
-        subtitle="Technologies and disciplines I've worked with across engineering and software quality domains."
+        subtitle="Technologies and disciplines I've worked with across full-stack development, software quality assurance, and embedded engineering."
       />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

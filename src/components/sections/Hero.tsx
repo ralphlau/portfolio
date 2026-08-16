@@ -137,7 +137,7 @@ export default function Hero() {
         >
           <span className="h-px w-12 bg-accent/40" />
           <p className="font-mono text-sm text-accent tracking-widest uppercase">
-            Computer Engineering Graduate
+            Full-Stack Developer &amp; QA Engineer
           </p>
           <span className="h-px w-12 bg-accent/40" />
         </div>
@@ -147,8 +147,8 @@ export default function Hero() {
           className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up"
           style={{ animationDelay: "350ms", opacity: 0, animationFillMode: "forwards" }}
         >
-          Building reliable IoT systems and quality software —
-          <br className="hidden md:block" /> from embedded hardware to automated test pipelines.
+          Building full-stack web applications and reliable IoT systems —
+          <br className="hidden md:block" /> from database schema to embedded hardware, with automated test coverage throughout.
         </p>
 
         {/* CTAs */}
@@ -179,10 +179,10 @@ export default function Hero() {
           <a href="mailto:timbolralphlaurenz@gmail.com" className="text-text-muted hover:text-accent transition-colors" aria-label="Email">
             <Mail size={18} />
           </a>
-          <a href="#" className="text-text-muted hover:text-accent transition-colors" aria-label="GitHub">
+          <a href="https://github.com/ralphlau" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-accent transition-colors" aria-label="GitHub">
             <Github size={18} />
           </a>
-          <a href="#" className="text-text-muted hover:text-accent transition-colors" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/ralph-laurenz-timbol" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-accent transition-colors" aria-label="LinkedIn">
             <Linkedin size={18} />
           </a>
         </div>

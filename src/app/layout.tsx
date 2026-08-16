@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ralph Laurenz Timbol | Computer Engineering & QA Engineer",
+  title: "Ralph Laurenz Timbol | Full-Stack Developer & QA Engineer",
   description:
-    "Computer Engineering graduate with experience in IoT systems, and software quality assurance. Skilled in Python, C++, JavaScript, and embedded systems.",
+    "Computer Engineering graduate building full-stack web applications with Next.js and PostgreSQL, with experience in software quality assurance and embedded IoT systems. Skilled in Python, TypeScript, JavaScript, and Playwright test automation.",
   keywords: [
     "Ralph Timbol",
+    "Full-Stack Developer",
+    "Next.js Developer",
     "QA Engineer",
     "Computer Engineering",
     "Playwright",
@@ -17,16 +19,16 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ralph Laurenz Timbol" }],
   openGraph: {
-    title: "Ralph Laurenz Timbol | Computer Engineering & QA Engineer",
+    title: "Ralph Laurenz Timbol | Full-Stack Developer & QA Engineer",
     description:
-      "Building reliable systems and testing quality software. Computer Engineering graduate from the Philippines.",
+      "Building full-stack web applications and testing quality software. Computer Engineering graduate from the Philippines.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ralph Laurenz Timbol | Portfolio",
-    description: "Computer Engineering & QA Engineer from the Philippines.",
+    description: "Full-Stack Developer & QA Engineer from the Philippines.",
   },
   robots: {
     index: true,

@@ -14,21 +14,21 @@ const contactLinks = [
     icon: Github,
     label: "GitHub",
     value: "github.com/ralphlau",
-    href: "#",
+    href: "https://github.com/ralphlau",
     accent: false,
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
     value: "linkedin.com/in/ralph-laurenz-timbol",
-    href: "#",
+    href: "https://linkedin.com/in/ralph-laurenz-timbol",
     accent: false,
   },
   {
     icon: Phone,
     label: "Phone",
     value: "+63 921-578-1684",
-    href: "#",
+    href: "tel:+639215781684",
     accent: false,
   },
 ];
@@ -61,6 +61,8 @@ export default function Contact() {
             <a
               key={label}
               href={href}
+              target={href.startsWith("http") ? "_blank" : undefined}
+              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
               className="gradient-border bg-surface/20 rounded-xl p-4 text-left hover:bg-surface/40 transition-all card-hover"
             >
               <div className="flex items-center gap-2 mb-1">

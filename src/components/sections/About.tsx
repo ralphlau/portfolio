@@ -1,8 +1,13 @@
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { Shield, Cpu, Wrench, MapPin } from "lucide-react";
+import { Shield, Cpu, Code2, MapPin } from "lucide-react";
 
 const highlights = [
+  {
+    icon: Code2,
+    title: "Full-Stack Development",
+    desc: "Building complete applications with Next.js and PostgreSQL — from database schema to UI, including multi-tenant systems with role-based access control.",
+  },
   {
     icon: Shield,
     title: "Software Testing",
@@ -11,12 +16,7 @@ const highlights = [
   {
     icon: Cpu,
     title: "Embedded Systems",
-    desc: "Hands-on experience with Arduino, ESP32, and Raspberry Pi — building IoT solutions from hardware up.",
-  },
-  {
-    icon: Wrench,
-    title: "Problem Solver",
-    desc: "Methodical debugger with strong fundamentals in networking, databases, and software architecture.",
+    desc: "Hands-on experience with Arduino and ESP32 — building IoT solutions from hardware up.",
   },
 ];
 
@@ -33,15 +33,14 @@ export default function About() {
               <span className="text-text-primary font-medium">
               Systems Plus College Foundation
             </span>{" "}
-              in the Philippines, recognized with Cum Laude honors and Dean&apos;s
-              List standing throughout my academic career.
+              in the Philippines, graduating with a 1.34 GPA.
             </p>
             <p>
               I have experience in manual and automated software testing using{" "}
-              <span className="text-accent font-medium">Playwright</span>, with a
-              solid foundation in Python, JavaScript, and embedded systems. I am
-              detail-oriented and capable of contributing to reliable, high-quality
-              software.
+              <span className="text-accent font-medium">Playwright</span>, and I
+              build full-stack web applications with Next.js and PostgreSQL —
+              including a multi-tenant bookkeeping platform and a job application
+              tracker, both with end-to-end test coverage.
             </p>
             <p>
               My engineering thesis involved designing an{" "}
