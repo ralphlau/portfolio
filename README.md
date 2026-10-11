@@ -9,6 +9,8 @@ A modern, professional developer portfolio built with **Next.js 14 (App Router)*
 - **Smooth animations** with CSS keyframes
 - **Sticky navbar** with scroll-based styling
 - **Project filter** tabs for category browsing
+- **Six CV projects** with accessible detail dialogs and screenshot galleries
+- **Screenshot carousels** with five-second autoplay, keyboard/touch controls, pause on hover/focus, and reduced-motion support
 - **Responsive** — mobile-first design
 - **SEO-friendly** with proper meta tags
 - **Component-based** architecture
@@ -25,12 +27,14 @@ src/
 │   ├── ui/
 │   │   ├── Badge.tsx      # Reusable badge/tag component
 │   │   ├── Section.tsx    # Section wrapper
+│   │   ├── ProjectDetail.tsx # Accessible project dialog
+│   │   ├── ProjectGallery.tsx # Screenshot carousel
 │   │   └── SectionHeading.tsx
 │   ├── sections/
 │   │   ├── Hero.tsx       # Hero with particle animation
 │   │   ├── About.tsx      # About me section
 │   │   ├── Skills.tsx     # Categorized skill badges
-│   │   ├── Projects.tsx   # Featured + placeholder projects
+│   │   ├── Projects.tsx   # CV projects and category filters
 │   │   ├── Experience.tsx # Work history
 │   │   ├── Education.tsx  # Academic background
 │   │   ├── Certifications.tsx
@@ -38,6 +42,7 @@ src/
 │   ├── Navbar.tsx         # Sticky navigation
 │   └── Footer.tsx
 └── lib/
+    ├── projects.ts        # Project content and gallery assets
     └── utils.ts           # cn() utility
 ```
 
@@ -96,7 +101,7 @@ Follow the prompts. Vercel will auto-detect Next.js and configure everything.
 | Personal info / tagline | `src/components/sections/Hero.tsx` |
 | About me paragraph | `src/components/sections/About.tsx` |
 | Skills list | `src/components/sections/Skills.tsx` |
-| Featured project | `src/components/sections/Projects.tsx` |
+| Projects and galleries | `src/lib/projects.ts` |
 | Work experience | `src/components/sections/Experience.tsx` |
 | Education details | `src/components/sections/Education.tsx` |
 | Certifications | `src/components/sections/Certifications.tsx` |
@@ -116,3 +121,5 @@ Follow the prompts. Vercel will auto-detect Next.js and configure everything.
 ## 📄 License
 
 Personal portfolio — all rights reserved to Ralph Laurenz Cunanan Timbol.
+
+Screenshot provenance, content review notes, and photo handling are recorded in [PORTFOLIO_UPDATE.md](PORTFOLIO_UPDATE.md).
