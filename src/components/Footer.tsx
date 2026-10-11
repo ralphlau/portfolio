@@ -17,14 +17,18 @@ export default function Footer() {
             <Mail size={16} />
           </a>
           <a
-            href="#"
+            href="https://github.com/ralphlau"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-text-muted hover:text-accent transition-colors"
             aria-label="GitHub"
           >
             <Github size={16} />
           </a>
           <a
-            href="#"
+            href="https://linkedin.com/in/ralph-laurenz-timbol"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-text-muted hover:text-accent transition-colors"
             aria-label="LinkedIn"
           >

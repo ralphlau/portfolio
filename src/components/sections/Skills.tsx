@@ -1,24 +1,24 @@
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Badge from "@/components/ui/Badge";
-import { Code2, Globe, FlaskConical, Cpu, Network, PenTool } from "lucide-react";
+import { Code2, Globe, FlaskConical, Database, Wrench } from "lucide-react";
 
 const skillCategories = [
   {
     icon: Code2,
     label: "Programming & Scripting",
     color: "accent" as const,
-    skills: ["Python", "JavaScript", "TypeScript", "Assembly", "C/C++"],
+    skills: ["Python", "JavaScript", "TypeScript", "Assembly Language", "C/C++"],
   },
   {
     icon: Globe,
     label: "Web Development",
     color: "gold" as const,
-    skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PHP", "REST APIs"],
+    skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PHP", "REST APIs", "Responsive Web Development"],
   },
   {
     icon: FlaskConical,
-    label: "Testing & QA",
+    label: "Software Testing & QA",
     color: "accent" as const,
     skills: [
       "Manual Testing",
@@ -29,29 +29,16 @@ const skillCategories = [
     ],
   },
   {
-    icon: Cpu,
-    label: "Embedded Systems & IoT",
+    icon: Database,
+    label: "Backend & Databases",
     color: "gold" as const,
-    skills: ["Arduino", "ESP32", "Sensor & Actuator Integration", "IoT Communication"],
+    skills: ["Node.js", "Prisma ORM", "PostgreSQL", "MySQL", "RESTful API Design", "Multi-Tenant Architecture"],
   },
   {
-    icon: Network,
-    label: "Networking",
+    icon: Wrench,
+    label: "Tools & DevOps",
     color: "accent" as const,
-    skills: [
-      "Network Configuration",
-      "Troubleshooting",
-      "VLANs",
-      "Routing Protocols",
-      "Wireless LAN",
-      "Cisco IOS",
-    ],
-  },
-  {
-    icon: PenTool,
-    label: "CAD & Technical Drafting",
-    color: "gold" as const,
-    skills: ["AutoCAD 2D Drafting", "AutoCAD 3D Modeling"],
+    skills: ["Docker", "Git", "GitHub", "CI/CD Basics"],
   },
 ];
 

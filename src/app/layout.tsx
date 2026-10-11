@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rltimbol.vercel.app"),
   title: "Ralph Laurenz Timbol | Full-Stack Developer & QA Engineer",
   description:
     "Computer Engineering graduate building full-stack web applications with Next.js and PostgreSQL, with experience in software quality assurance and embedded IoT systems. Skilled in Python, TypeScript, JavaScript, and Playwright test automation.",
@@ -24,11 +25,14 @@ export const metadata: Metadata = {
       "Building full-stack web applications and testing quality software. Computer Engineering graduate from the Philippines.",
     type: "website",
     locale: "en_US",
+    url: "https://rltimbol.vercel.app",
+    images: [{ url: "/assets/profile/ralph-photo.webp", width: 640, height: 640, alt: "Ralph Laurenz Cunanan Timbol" }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Ralph Laurenz Timbol | Portfolio",
     description: "Full-Stack Developer & QA Engineer from the Philippines.",
+    images: ["/assets/profile/ralph-photo.webp"],
   },
   robots: {
     index: true,

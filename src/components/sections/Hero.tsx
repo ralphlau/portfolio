@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
@@ -106,11 +107,18 @@ export default function Hero() {
           style={{ opacity: 0, animationFillMode: "forwards" }}
         >
           <div className="relative inline-block">
-           <img
-              src="/ralph-photo.jpg"
-            alt="Ralph Laurenz Timbol"
-             className="w-36 h-36 md:w-40 md:h-40 rounded-full border-2 border-accent/40 object-cover object-top animate-glow-pulse"
+            <picture>
+              <source srcSet="/assets/profile/ralph-photo.webp" type="image/webp" />
+              <Image
+                src="/ralph-photo.jpg"
+                alt="Ralph Laurenz Cunanan Timbol"
+                width={640}
+                height={640}
+                unoptimized
+                priority
+                className="w-36 h-36 md:w-40 md:h-40 rounded-full border-2 border-accent/40 object-cover object-top animate-glow-pulse"
               />
+            </picture>
             {/* Decorative ring */}
             <div className="absolute inset-0 rounded-full border border-accent/15 scale-110" />
           </div>
@@ -147,8 +155,8 @@ export default function Hero() {
           className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up"
           style={{ animationDelay: "350ms", opacity: 0, animationFillMode: "forwards" }}
         >
-          Building full-stack web applications and reliable IoT systems —
-          <br className="hidden md:block" /> from database schema to embedded hardware, with automated test coverage throughout.
+          Building full-stack web applications with Next.js, TypeScript, and PostgreSQL.
+          <br className="hidden md:block" /> Bringing a detail-oriented approach to development and software quality assurance.
         </p>
 
         {/* CTAs */}

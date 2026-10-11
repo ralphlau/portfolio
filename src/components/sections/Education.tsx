@@ -25,7 +25,7 @@ export default function Education() {
                   BS Computer Engineering
                 </h3>
                 <p className="text-text-secondary font-medium mt-0.5">
-                  Systems Plus College Foundation
+                  System Plus College Foundation
                 </p>
                 <p className="text-text-muted text-sm mt-0.5">
                   Angeles City, Pampanga, Philippines
@@ -54,12 +54,10 @@ export default function Education() {
               </p>
               <p className="text-sm text-text-secondary leading-relaxed">
                 <span className="text-text-primary font-medium">
-                  The Design and Development of an IoT-Based Beehive Monitoring System
-                  for Philippine Stingless Bee Colonies (Tetragonula Biroi)
+                  IoT-Based Beehive Monitoring and Feedback System
                 </span>{" "}
-                — An IoT solution integrating temperature, humidity, and weight sensors
-                 with automated feedback mechanisms for real-time 
-                 stingless bee colony health management.
+                — A PHP and MySQL web application with ESP32 real-time data
+                integration, REST APIs, CRUD operations, and solar-battery power.
               </p>
             </div>
           </div>

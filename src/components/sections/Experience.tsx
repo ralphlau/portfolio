@@ -5,19 +5,34 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    company: "DE Webnet Solution",
+    role: "Full Stack Developer (Part-time)",
+    period: "Sept 2026 – Present",
+    location: "Remote",
+    type: "Part-time · Remote",
+    description:
+      "Develop and maintain full-stack web applications for multiple clients against approved technical specifications.",
+    responsibilities: [
+      "Developed and maintained production-ready client systems using Next.js, TypeScript, PostgreSQL, and Prisma.",
+      "Implemented role-based access control, multi-tenant data isolation, and append-only audit logging for secure data handling.",
+      "Built authentication, scheduling, records management, and reporting modules from business requirements.",
+      "Wrote and maintained unit, integration, and browser-level automated tests to improve reliability and reduce pre-release issues.",
+    ],
+    skills: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Automated Testing"],
+  },
+  {
     company: "Cloudstaff Philippines Inc.",
     role: "Associate SQA Engineer Trainee",
     period: "Jan 2026 – Apr 2026",
-    location: "Philippines",
-    type: "Internship / Trainee",
+    location: "Angeles City, Pampanga",
+    type: "Trainee · Angeles City, Pampanga",
     description:
       "Contributed to software quality assurance processes within a professional development team, focusing on both manual and automated testing practices.",
     responsibilities: [
-      "Executed manual test cases across various application features, identifying and documenting defects with clear reproduction steps",
-      "Developed and maintained Playwright automation scripts for end-to-end regression testing",
-      "Created detailed test plans and test case documentation aligned with acceptance criteria",
-      "Collaborated with developers to triage bugs and verify fixes across multiple releases",
-      "Participated in sprint ceremonies and contributed to QA best practices within the team",
+      "Conducted manual testing of application features and documented defects with detailed reproduction steps.",
+      "Developed and executed Playwright end-to-end tests to increase regression coverage and efficiency.",
+      "Designed and maintained test cases and documentation aligned with acceptance criteria and project requirements.",
+      "Participated in agile ceremonies and collaborated with cross-functional teams.",
     ],
     skills: ["Manual Testing", "Playwright", "Test Documentation", "Agile", "Bug Tracking"],
   },
@@ -29,7 +44,7 @@ export default function Experience() {
       <SectionHeading
         label="04. Experience"
         title="Work History"
-        subtitle="Professional experience in software quality assurance and engineering."
+        subtitle="Professional experience in full-stack development and software quality assurance."
       />
 
       <div className="space-y-8">

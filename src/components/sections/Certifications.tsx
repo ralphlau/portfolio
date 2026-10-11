@@ -7,25 +7,19 @@ const certifications = [
     title: "CCNA: Introduction to Networks",
     issuer: "Cisco Networking Academy",
     date: "Jan 2025",
-    desc: "Foundational networking concepts including IP addressing, subnetting, and basic device configuration.",
+    desc: "Completed Cisco Networking Academy training in introductory networking.",
   },
   {
     title: "CCNA: Switching, Routing, and Wireless Essentials",
     issuer: "Cisco Networking Academy",
     date: "Jun 2025",
-    desc: "VLANs, inter-VLAN routing, STP, EtherChannel, and wireless LAN configuration and management.",
+    desc: "Completed Cisco Networking Academy training in switching, routing, and wireless essentials.",
   },
   {
     title: "CCNA: Enterprise Networking, Security, and Automation",
     issuer: "Cisco Networking Academy",
     date: "Mar 2026",
-    desc: "OSPF, BGP basics, network security fundamentals, and network automation with Python.",
-  },
-  {
-    title: "AI-Driven Test Automation and Quality Assurance Workshop",
-    issuer: "Cloudstaff Philippines Inc.",
-    date: "2026",
-    desc: "Applying AI-assisted approaches to test automation and quality assurance workflows.",
+    desc: "Completed Cisco Networking Academy training in enterprise networking, security, and automation.",
   },
 ];
 
@@ -43,10 +37,10 @@ export default function Certifications() {
       <SectionHeading
         label="06. Certifications"
         title="Credentials"
-        subtitle="Professional certifications and technical training programs."
+        subtitle="Course certificates and technical training programs."
       />
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
         {certifications.map((cert) => (
           <div
             key={cert.title}

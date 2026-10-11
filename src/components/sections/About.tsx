@@ -31,32 +31,32 @@ export default function About() {
             <p>
              I&apos;m a Computer Engineering graduate from{" "}
               <span className="text-text-primary font-medium">
-              Systems Plus College Foundation
+              System Plus College Foundation
             </span>{" "}
               in the Philippines, graduating with a 1.34 GPA.
             </p>
             <p>
-              I have experience in manual and automated software testing using{" "}
+              I work as a part-time Full Stack Developer at DE Webnet Solution,
+              building applications with Next.js, TypeScript, PostgreSQL, and Prisma.
+              I also have experience in manual and automated software testing using{" "}
               <span className="text-accent font-medium">Playwright</span>, and I
-              build full-stack web applications with Next.js and PostgreSQL —
-              including a multi-tenant bookkeeping platform and a job application
-              tracker, both with end-to-end test coverage.
+              focus on secure access, isolated organization data, and reliable
+              software backed by unit, integration, and browser tests.
             </p>
             <p>
               My engineering thesis involved designing an{" "}
             <span className="text-text-primary font-medium">
               IoT-Based Beehive Monitoring System
             </span>{" "}
-              for Philippine stingless bee colonies — integrating ESP32, temperature,
-              humidity, and weight sensors with automated feedback mechanisms and
-              real-time remote monitoring.
+              with a PHP and MySQL web application, REST APIs, ESP32 real-time
+              data integration, IoT hardware assembly, and solar-battery power.
             </p>
           </div>
 
           {/* Location */}
           <div className="flex items-center gap-2 mt-6 text-text-muted">
             <MapPin size={14} />
-            <span className="font-mono text-xs">Philippines</span>
+            <span className="font-mono text-xs">Pampanga, Philippines</span>
           </div>
         </div>
 
